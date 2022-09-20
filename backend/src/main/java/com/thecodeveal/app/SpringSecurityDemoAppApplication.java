@@ -33,7 +33,7 @@ public class SpringSecurityDemoAppApplication {
 		List<Authority> authorityList=new ArrayList<>();
 		
 		authorityList.add(createAuthority("USER","User role"));
-		//authorityList.add(createAuthority("ADMIN","Admin role"));
+		authorityList.add(createAuthority("ADMIN","Admin role"));
 		
 		User user=new User();
 		
