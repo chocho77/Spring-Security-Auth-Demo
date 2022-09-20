@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {
-  BrowserRouter,
-  Switch,
+  BrowserRouter as Router,
   Route,
-  Link
+  Routes
 } from "react-router-dom";
 import LoginPage from './pages/LoginPage';
 import { Dashboard } from './pages/dashboard/dashboard';
@@ -12,12 +10,14 @@ import { Dashboard } from './pages/dashboard/dashboard';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
+  
+      <Router>
+        <Routes>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/dashboard" component={Dashboard} />
-      </Switch>
-    </BrowserRouter>
+        </Routes>
+      </Router>
+    
   );
 }
 
