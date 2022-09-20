@@ -1,6 +1,6 @@
-//import { configureStore } from 'redux';
-//import rootReducer from "./reducers";
+// import { legacy_createStore as createStore } from "redux";
+// import rootReducer from "./reducers";
 
-//const store=configureStore(rootReducer);
+// const store=legacy_createStore(rootReducer);
 
-//export default store;
+// export default store;
